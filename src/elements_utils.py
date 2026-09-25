@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from humancursor import WebCursor
 
 def find_daily_set_elements(driver):
     daily_set_elements = []
@@ -21,13 +22,11 @@ def find_daily_set_elements(driver):
 def get_daily_set_elements_rect(driver):
     daily_set_element_rects = []
 
-    for element in find_daily_set_elements(driver):
-        driver.execute_script("""
-        arguments[0].scrollIntoView({
-        block: "center",
-        });
-        """, element)
+    cursor = WebCursor(driver)
 
+    cursor.scroll_into_view_of_element(find_daily_set_elements(driver)[0])
+
+    for element in find_daily_set_elements(driver):
         rect = driver.execute_script("""
         const r = arguments[0].getBoundingClientRect();
         return {
@@ -43,4 +42,3 @@ def get_daily_set_elements_rect(driver):
         daily_set_element_rects.append(rect)
 
     return daily_set_element_rects
-
