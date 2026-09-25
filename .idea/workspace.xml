@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7af9a89a-b562-41b9-bca1-16ce7ca6053d" name="Changes" comment="Pierwszy krok: przegladarka sie otwiera 9i nie wykrywa bot control)">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/points_farm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/browser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jedmajc&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Jedmajc/points_farm&quot;,
+    &quot;accountId&quot;: &quot;1b1535e0-f5b3-4dd5-b95b-3563a8987092&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000001471713313" />
+      <entry key="S2" value="1.0195864580330254" />
+      <entry key="S5" value="1.2085421668592466" />
+      <entry key="S10" value="1.540681026022493" />
+      <entry key="S30" value="3.5749730621669524" />
+      <entry key="S60" value="6.1588903904339345" />
+      <entry key="M2" value="9.412015028928359" />
+      <entry key="M5" value="20.110257598450186" />
+      <entry key="M10" value="56.81547461939584" />
+      <entry key="M15" value="105.10469296410943" />
+      <entry key="M30" value="232.91573641819429" />
+      <entry key="H1" value="377.45768811869385" />
+      <entry key="H2" value="498.8890124176003" />
+      <entry key="H4" value="585.3693810419904" />
+      <entry key="D1" value="681.796423116356" />
+      <entry key="W1" value="701.5871962885483" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.2329410143095325E-82" />
+      <entry key="S2" value="3.3322346415726748E-21" />
+      <entry key="S5" value="6.443090545866159E-9" />
+      <entry key="S10" value="8.027949736644911E-5" />
+      <entry key="S30" value="0.046537489931449155" />
+      <entry key="S60" value="0.29007148443878505" />
+      <entry key="M2" value="0.8861266069089043" />
+      <entry key="M5" value="2.407850436262934" />
+      <entry key="M10" value="4.406306137029611" />
+      <entry key="M15" value="5.748368667628634" />
+      <entry key="M30" value="7.810229439528574" />
+      <entry key="H1" value="9.630264336243133" />
+      <entry key="H2" value="12.265527977672017" />
+      <entry key="H4" value="15.649095031967867" />
+      <entry key="D1" value="21.329809874654877" />
+      <entry key="W1" value="22.7472187434026" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.0049443616951964035" />
+      <entry key="MS500" value="0.34579772852915547" />
+      <entry key="S2" value="0.7831807472851255" />
+      <entry key="S5" value="1.0932104119462538" />
+      <entry key="S10" value="1.4696630737480754" />
+      <entry key="S30" value="3.5672304234793972" />
+      <entry key="S60" value="6.3871601289877" />
+      <entry key="M2" value="10.23105407573206" />
+      <entry key="M5" value="22.456102368878337" />
+      <entry key="M10" value="61.17038643932284" />
+      <entry key="M15" value="110.80984718781039" />
+      <entry key="M30" value="240.69677621008057" />
+      <entry key="H1" value="387.06984120078926" />
+      <entry key="H2" value="511.14352564004713" />
+      <entry key="H4" value="601.0119123639228" />
+      <entry key="D1" value="703.1248648293822" />
+      <entry key="W1" value="724.3342100527159" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3Jlm0CtaqPUqcnN3GL6IA6jpS5w" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.constants.executor": "Run",
+    "Python.driver.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jedma\PycharmProjects\points_farm\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.10968.92" />
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7af9a89a-b562-41b9-bca1-16ce7ca6053d" name="Changes" comment="" />
+      <created>1790243803929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790243803929</updated>
+      <workItem from="1790331620608" duration="36000" />
+      <workItem from="1790331663182" duration="175000" />
+      <workItem from="1790331871411" duration="10218000" />
+    </task>
+    <task id="LOCAL-00001" summary="Pierwszy krok: przegladarka sie otwiera 9i nie wykrywa bot control)">
+      <option name="closed" value="true" />
+      <created>1790283162824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790283162824</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pierwszy krok: przegladarka sie otwiera 9i nie wykrywa bot control)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pierwszy krok: przegladarka sie otwiera 9i nie wykrywa bot control)" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/points_farm$main.coverage" NAME="main Coverage Results" MODIFIED="1790352355203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/points_farm$driver.coverage" NAME="driver Coverage Results" MODIFIED="1790335597068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+</project>
