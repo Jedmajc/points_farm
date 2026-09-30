@@ -15,18 +15,22 @@ def find_daily_set_elements(driver):
     for link in driver.find_elements(By.XPATH, "//a[@href]"):
         if '+10' in link.text:
             daily_set_elements.append(link)
-
+    #returns list of WebElements
     return daily_set_elements
 
 
 def get_daily_set_elements_rect(driver):
     daily_set_element_rects = []
+    daily_set_elements = find_daily_set_elements(driver)
 
     cursor = WebCursor(driver)
 
-    cursor.scroll_into_view_of_element(find_daily_set_elements(driver)[0])
+    if not daily_set_elements:
+        return daily_set_element_rects
 
-    for element in find_daily_set_elements(driver):
+    cursor.scroll_into_view_of_element(daily_set_elements[0])
+
+    for element in daily_set_elements:
         rect = driver.execute_script("""
         const r = arguments[0].getBoundingClientRect();
         return {
@@ -40,5 +44,6 @@ def get_daily_set_elements_rect(driver):
         """, element)
 
         daily_set_element_rects.append(rect)
-
+    #returns list of coordinates
+    #example: {'bottom': 557, 'height': 126, 'left': 284, 'right': 713, 'top': 431, 'width': 429}
     return daily_set_element_rects
