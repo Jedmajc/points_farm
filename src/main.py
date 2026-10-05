@@ -16,6 +16,8 @@ driver.get("https://rewards.bing.com/dashboard")
 cursor = WebCursor(driver)
 cursor.show_cursor()
 
+driver.refresh()
+
 element_rects = get_daily_set_elements_rect(driver)
 
 original_handle = driver.current_window_handle
