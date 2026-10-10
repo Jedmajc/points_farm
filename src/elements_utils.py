@@ -1,22 +1,10 @@
+import random
+import time
+
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
 from humancursor import WebCursor
 
-def find_daily_set_elements(driver):
-    daily_set_elements = []
-
-    wait = WebDriverWait(driver, 10)
-
-    redeem = driver.find_element(By.XPATH, "//*[@id='redeem']")
-
-    wait.until(EC.visibility_of(redeem))
-
-    for link in driver.find_elements(By.XPATH, "//a[@href]"):
-        if '+10' in link.text:
-            daily_set_elements.append(link)
-    #returns list of WebElements
-    return daily_set_elements
+from src.actions import click_on_element
 
 
 def get_daily_set_elements_rect(driver):
@@ -47,3 +35,14 @@ def get_daily_set_elements_rect(driver):
     #returns list of coordinates
     #example: {'bottom': 557, 'height': 126, 'left': 284, 'right': 713, 'top': 431, 'width': 429}
     return daily_set_element_rects
+
+def find_daily_set_elements(driver):
+    section = driver.find_element(By.ID, "dailyset")
+    return section.find_elements(By.XPATH, ".//a")
+
+def click_daily_set_elements(driver, cursor):
+    elements = find_daily_set_elements(driver)
+    for element in elements:
+        time.sleep(random.uniform(0.2, 0.4))
+        click_on_element(cursor, element)
+        break

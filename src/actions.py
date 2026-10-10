@@ -1,7 +1,5 @@
 import random
 
-from browser import driver
-
 def move_mouse_to_element_rect(rect, cursor):
 
     x = calculate_element_center_area(rect)[0]
@@ -14,3 +12,5 @@ def calculate_element_center_area(rect):
 
     return area_x, area_y
 
+def click_on_element(cursor, element):
+    cursor.click_on(element, relative_position=[random.uniform(0.2, 0.7), random.uniform(0.2, 0.7)])
