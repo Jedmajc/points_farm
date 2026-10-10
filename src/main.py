@@ -1,14 +1,15 @@
 from humancursor import WebCursor
 
 from browser import create_driver
+from src.constants import WINDOW_SIZE, WINDOWS_URL
 from src.elements_utils import click_daily_set_elements
 
 
 def main():
     driver = create_driver()
 
-    driver.set_window_size(1920, 1080)
-    driver.get("https://rewards.bing.com/dashboard")
+    driver.set_window_size(WINDOW_SIZE[0], WINDOW_SIZE[1])
+    driver.get(WINDOWS_URL)
 
     cursor = WebCursor(driver)
 
