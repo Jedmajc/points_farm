@@ -2,7 +2,7 @@ from humancursor import WebCursor
 
 from browser import create_driver
 from src.constants import WINDOW_SIZE, WINDOWS_URL
-from src.elements_utils import click_daily_set_elements
+from src.daily_set import click_daily_set_elements
 
 
 def main():

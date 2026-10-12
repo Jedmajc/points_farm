@@ -40,9 +40,3 @@ def find_daily_set_elements(driver):
     section = driver.find_element(By.ID, "dailyset")
     return section.find_elements(By.XPATH, ".//a")
 
-def click_daily_set_elements(driver, cursor):
-    elements = find_daily_set_elements(driver)
-    for element in elements:
-        time.sleep(random.uniform(0.2, 0.4))
-        click_on_element(cursor, element)
-        break
